@@ -1,19 +1,57 @@
-<header class="app-header">
-    <div class="app-header__content">
-        <div class="app-header__row">
-            <div class="container">
-                <div class="row middle-xs">
-                    <div class="col-md-6">
-                        <div class="app-logo">
-                            <a href="/">
-                                <span>LOGO</span>
-                            </a>
-                        </div>
-                    </div>
+{% set sites = [
+    {"name": "Strona główna", "slug": "home"},
+    {"name": "O mnie", "slug": "about"},
+    {"name": "Program wyborczy", "slug": "program"},
+    {"name": "Zadaj mi pytanie", "slug": "qa"},
+    {"name": "Aktualności", "slug": "news"},
+    {"name": "Moi kandydaci", "slug": "team"},
+    {"name": "Kontakt", "slug": "contact"}
+] %}
 
-                    <div class="col-md-6 text-right">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
+<header class="app-header">
+    <div class="app-header__content app-header__content--bg-primary">
+        <div class="container">
+            <div class="app-header__row">
+                <div class="app-header__col text-right">
+                    <ul class="contact-links">
+                        <li class="contact-links__item">
+                            <span class="contact-links__link">
+                                <i class="hp-icon--email"></i> <span>kontakt@hannapruchniewska.pl</span>
+                            </span>
+                        </li>
+                        <li class="contact-links__item">
+                            <a href="//facebook.com/hanna.pruchniewska" target="_blank" class="contact-links__link">
+                                <i class="hp-icon--fb"></i> <span>/hanna.pruchniewska</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-header__content">
+        <div class="container">
+            <div class="app-header__row">
+                <div class="app-header__col">
+                    <section class="app-logo">
+                        <h1 class="app-logo__text">
+                            <a href="/">
+                                <img src="assets/images/logo.svg" alt="dalej do przodu">
+                            </a>
+                        </h1>
+                    </section>
+                </div>
+
+                <div class="app-header__col app-header__col--with-border || text-right">
+                    <nav class="app-navigation">
+                        <ul class="app-navigation__list">
+                            {% for site in sites %}
+                                <li class="app-navigation__item {% if site.slug === slug %} active {%  endif %}">
+                                    <a href="{{ site.slug }}.html" class="app-navigation__link">{{ site.name }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

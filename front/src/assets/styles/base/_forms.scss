@@ -1,0 +1,66 @@
+form {
+  display: block;
+}
+
+fieldset {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  & + & {
+    margin-top: 20px;
+  }
+}
+
+input[type="text"], input[type="number"], input[type="submit"], select, textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px rgba(color('PRIMARY'), .25) solid;
+  border-radius: 6px;
+  resize: none;
+
+  @include placeholder {
+    font-weight: 300;
+    font-style: italic;
+    color: #a7a7a7;
+  }
+}
+
+input[type="submit"] {
+  display: inline-block;
+  width: auto;
+  padding: 15px 30px;
+  color: #ffffff;
+  background: color('PRIMARY');
+  cursor: pointer;
+  letter-spacing: .05em;
+
+  &:hover {
+    color: #ffffff;
+    background: color('SECONDARY');
+  }
+}
+
+select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('../images/down-arrow.png') right 15px center no-repeat;
+  background-size: 10px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-style: italic;
+}

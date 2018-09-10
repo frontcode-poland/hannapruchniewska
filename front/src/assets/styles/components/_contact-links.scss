@@ -1,0 +1,30 @@
+.contact-links {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 -15px;
+  padding: 10px 0;
+  text-align: right;
+  list-style-type: none;
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+  }
+
+  &__link {
+    display: block;
+    font-size: calculateRem(12px);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+
+    i, span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    i {
+      margin-right: 3px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.app-logo {
+  display: block;
+  padding: 15px 0 0 0;
+
+  &__text {
+    font-size: calculateRem(25px);
+    font-weight: 900;
+    line-height: 1.4;
+
+    strong {
+      font-weight: inherit;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100px;
+  }
+}

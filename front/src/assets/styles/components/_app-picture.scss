@@ -1,0 +1,28 @@
+.app-picture {
+  display: block;
+  width: 100%;
+  margin: 30px 0;
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    max-width: 100%;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--stretch {
+    width: 100%;
+  }
+}

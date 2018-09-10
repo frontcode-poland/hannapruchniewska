@@ -1,5 +1,5 @@
 body {
-  color: color('FOURTH');
+  color: color('PRIMARY');
   font: normal 15px font('BODY');
   line-height: 1.66;
 }
@@ -19,7 +19,7 @@ h6, .h6 {
   font-family: font('HEADING');
   font-weight: 400;
   line-height: 1.4;
-  color: color('THIRD');
+  color: inherit;
 
   strong  {
     font-weight: 600;
@@ -83,17 +83,15 @@ p, a, ul, ol {
   padding: 0;
 }
 
-.link {
+.link, a {
   padding: 0;
   line-height: 1;
   cursor: pointer;
   background: transparent;
   border: none;
-  border-bottom: 1px currentColor solid;
 
   @include on-event {
-    border-bottom-color: transparent;
-    opacity: 1;
+    color: color('SECONDARY')
   }
 }
 

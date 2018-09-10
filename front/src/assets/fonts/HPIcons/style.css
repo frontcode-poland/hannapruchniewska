@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'HP-Icons';
+  src:  url('fonts/HP-Icons.eot?m6ybof');
+  src:  url('fonts/HP-Icons.eot?m6ybof#iefix') format('embedded-opentype'),
+    url('fonts/HP-Icons.ttf?m6ybof') format('truetype'),
+    url('fonts/HP-Icons.woff?m6ybof') format('woff'),
+    url('fonts/HP-Icons.svg?m6ybof#HP-Icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="hp-icon--"], [class*=" hp-icon--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'HP-Icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hp-icon--fb:before {
+  content: "\e901";
+}
+.hp-icon--email:before {
+  content: "\e902";
+}
+.hp-icon--heart:before {
+  content: "\e900";
+}

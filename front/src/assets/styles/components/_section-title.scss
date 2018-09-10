@@ -1,0 +1,17 @@
+$component: '.section-title';
+
+.section-title {
+  position: relative;
+  display: block;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    display: block;
+    margin: 0;
+    font-size: calculateRem(42px);
+    font-weight: 400;
+    letter-spacing: .06em;
+  }
+}

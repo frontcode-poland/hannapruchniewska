@@ -1,0 +1,44 @@
+.posts-list {
+  position: relative;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    margin: -30px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    width: 33.3%;
+    padding: 30px;
+  }
+}
+
+.pl-item {
+  &__date {
+    font-size: calculateRem(17px);
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: color('SECONDARY');
+  }
+
+  &__title {
+    display: block;
+    margin: 15px 0;
+    font-size: calculateRem(20px);
+    line-height: 1.4;
+  }
+
+  &__text {
+    font-size: calculateRem(16px);
+    font-weight: 300;
+    line-height: 1.8;
+    opacity: .75;
+  }
+
+  &__action {
+    margin-top: 15px;
+    text-align: right;
+  }
+}

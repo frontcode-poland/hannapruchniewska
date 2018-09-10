@@ -1,0 +1,19 @@
+.frontcode-signature {
+  font-weight: 600;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    height: 17px;
+    width: auto;
+    margin-left: 5px;
+  }
+
+  i {
+    position: relative;
+    display: inline-block;
+    top: 1px;
+    margin: 0 2px;
+    color: color('DANGER');
+  }
+}
