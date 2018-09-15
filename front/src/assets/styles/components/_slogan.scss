@@ -1,0 +1,32 @@
+.slogan {
+  position: relative;
+  margin: 0 -.5em;
+  padding: 30px 0;
+  &__text {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: calculateRem(64px);
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 1.4;
+    &::after {
+      content: "";
+      display: inline;
+      height: 20px;
+      background: #aaaaaa;
+    }
+  }
+
+  strong {
+    font-weight: 700;
+    text-shadow: 1px 1px 0px currentColor;
+  }
+
+  small {
+    display: block;
+    margin-top: 15px;
+    font-size: .5em;
+    font-weight: 300;
+    color: color('SECONDARY')
+  }
+}

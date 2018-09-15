@@ -1,0 +1,69 @@
+@mixin button ($color, $background) {
+  color: $color;
+  background: $background;
+  border-color: $background;
+
+  &:hover {
+    color: $color;
+    background: lighten($background, 10%);
+    border-color: lighten($background, 10%);
+  }
+
+  &.button--outline {
+    color: $background;
+    background: transparent;
+    border-color: currentColor;
+
+    &:hover {
+      color: $color;
+      background: $background;
+      border-color: $background;
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 30px;
+  color: #ffffff;
+  background: color('THIRD');
+  border: 2px color('THIRD') solid;
+  cursor: pointer;
+  transition: all 100ms linear;
+
+  &:hover {
+    color: #ffffff;
+    background: lighten(color('THIRD'), 10%);
+    border-color: lighten(color('THIRD'), 10%);
+  }
+
+  &--rounded {
+    border-radius: 30px;
+  }
+
+  &--outline {
+    color: color('THIRD');
+    background: transparent;
+    border-color: currentColor;
+
+    &:hover {
+      color: #ffffff;
+      background: color('THIRD');
+      border-color: color('THIRD');
+    }
+  }
+
+  &--primary {
+    @include button(#ffffff, color('PRIMARY'))
+  }
+
+  &--secondary {
+    @include button(#ffffff, color('SECONDARY'))
+  }
+}
+
+.buttons {
+  display: block;
+  margin-top: 40px;
+}

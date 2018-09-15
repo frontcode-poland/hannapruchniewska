@@ -1,0 +1,107 @@
+.team-list {
+  position: relative;
+  margin-top: 30px;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -20px
+  }
+
+  &__item {
+    width: 33.3%;
+    padding: 20px;
+  }
+}
+
+$component: '.team-member';
+.team-member {
+  position: relative;
+
+  &__picture {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 95%;
+    font-size: 0;
+    line-height: 1;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px rgba(color('PRIMARY'), .3) solid;
+    overflow: hidden;
+
+    &:hover {
+      #{$component}__short-text {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__name {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    font-size: calculateRem(22px);
+    font-weight: 500;
+    text-align: center;
+    small {
+      display: block;
+      margin-bottom: 15px;
+      font-family: 'Open Sans', sans-serif;
+      color: color('SECONDARY');
+    }
+  }
+
+  &__short-text {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(color('PRIMARY'), .85);
+    color: #ffffff;
+    font-size: calculateRem(20px);
+    text-align: center;
+    line-height: 1.4em;
+    opacity: 0;
+    transition: opacity 100ms linear;
+
+    > span {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      transform: translateY(-50%);
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: calculateRem(18px);
+        font-weight: 400;
+      }
+
+      i {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-size: .75em;
+        font-weight: 600;
+      }
+    }
+
+    //i {
+    //  display: block;
+    //  width: 100px;
+    //  margin: 15px auto 0 auto;
+    //  text-align: center;
+    //  font-size: calculateRem(50px);
+    //  font-weight: 100;
+    //  border-radius: 50%;
+    //}
+  }
+}

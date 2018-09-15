@@ -67,7 +67,7 @@ export abstract class Component {
         return components;
     }
 
-    protected constructor (protected element?: HTMLElement, protected type?: string) {
+    constructor (protected element?: HTMLElement, protected type?: string) {
         this.prepareConfigByElement(element, type);
         this.prepareRefs(element);
 

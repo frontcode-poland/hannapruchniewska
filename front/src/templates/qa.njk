@@ -1,0 +1,181 @@
+{% import "_components/components.njk" as components %}
+{% set slug = 'qa' %}
+{% set title = 'Hanna Pruchniewska - zadaj mi pytanie' %}
+{% extends "_layouts/default.njk" %}
+{% block content %}
+    <div class="app-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-content">
+                        <section class="section-title section-title--light || app-component text-center">
+                            <h2 class="section-title__text">Zadaj mi pytanie</h2>
+                        </section>
+                        <section class="qa-section || app-component">
+                            <form action="" class="qa-section__form">
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Treść pytania</label>
+                                                <textarea name="question"
+                                                          id="question"
+                                                          class="qa-section__textarea"
+                                                          placeholder="Tutaj wpisz pytanie jakie chciałbyś mi zadać"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="row bottom-xs">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="form-label">Podpis zadającego pytanie</label>
+                                                <input type="text" name="author" placeholder="Podaj swój podpis">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="form-label">Kategoria pytania</label>
+                                                <select name="category">
+                                                    <option value="">Ogólne</option>
+                                                    <option value="1">Kultura</option>
+                                                    <option value="2">Inwestycje</option>
+                                                    <option value="3">Gospodarka</option>
+                                                    <option value="4">Komunikacja</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="submit" value="Wyślij pytanie">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </section>
+                        <section class="separator">
+                            <hr>
+                        </section>
+                        <section class="last-qa">
+                            <div class="last-qa__title">
+                                <h2 class="last-qa__title-text">Odpowiedzi</h2>
+                            </div>
+                            <div class="last-qa__filters">
+                                <h5 class="last-qa__filters-title">Filtruj odpowiedzi po kategoriach</h5>
+                                <ul class="last-qa__filters-list">
+                                    <li class="last-qa__filters-item">
+                                        <label>
+                                            <input type="checkbox" jcf> <span>Wszystkie</span>
+                                        </label>
+                                    </li>
+                                    <li class="last-qa__filters-item">
+                                        <label>
+                                            <input type="checkbox" jcf> <span>Ogólne</span>
+                                        </label>
+                                    </li>
+                                    <li class="last-qa__filters-item">
+                                        <label>
+                                            <input type="checkbox" jcf> <span>Kultura</span>
+                                        </label>
+                                    </li>
+                                    <li class="last-qa__filters-item">
+                                        <label>
+                                            <input type="checkbox" jcf> <span>Inwestycje</span>
+                                        </label>
+                                    </li>
+                                    <li class="last-qa__filters-item">
+                                        <label>
+                                            <input type="checkbox" jcf> <span>Gospodarka</span>
+                                        </label>
+                                    </li>
+                                    <li class="last-qa__filters-item">
+                                        <label>
+                                            <input type="checkbox" jcf> <span>Komunikacja</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="last-qa__list">
+                                <li class="last-qa__item">
+                                    <span class="last-qa__counter">1</span>
+                                    <h4 class="last-qa__question">Lorem ipsum dolor sit amet. consectetur adipiscing elit sed ?</h4>
+                                    <p class="last-qa__user">~Tadeusz Nowak</p>
+                                    <div class="last-qa__answer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                            id est laborum.</p>
+                                    </div>
+                                </li>
+                                <li class="last-qa__item">
+                                    <span class="last-qa__counter">2</span>
+                                    <h4 class="last-qa__question">Lorem ipsum dolor sit amet. consectetur adipiscing elit sed ?</h4>
+                                    <p class="last-qa__user">~Tadeusz Nowak</p>
+                                    <div class="last-qa__answer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                            id est laborum.</p>
+                                    </div>
+                                </li>
+                                <li class="last-qa__item">
+                                    <span class="last-qa__counter">3</span>
+                                    <h4 class="last-qa__question">Lorem ipsum dolor sit amet. consectetur adipiscing elit sed ?</h4>
+                                    <p class="last-qa__user">~Tadeusz Nowak</p>
+                                    <div class="last-qa__answer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                            id est laborum.</p>
+                                    </div>
+                                </li>
+                                <li class="last-qa__item">
+                                    <span class="last-qa__counter">4</span>
+                                    <h4 class="last-qa__question">Lorem ipsum dolor sit amet. consectetur adipiscing elit sed ?</h4>
+                                    <p class="last-qa__user">~Tadeusz Nowak</p>
+                                    <div class="last-qa__answer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                            id est laborum.</p>
+                                    </div>
+                                </li>
+                                <li class="last-qa__item">
+                                    <span class="last-qa__counter">5</span>
+                                    <h4 class="last-qa__question">Lorem ipsum dolor sit amet. consectetur adipiscing elit sed ?</h4>
+                                    <p class="last-qa__user">~Tadeusz Nowak</p>
+                                    <div class="last-qa__answer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                            id est laborum.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item active">
+                                    <a href="">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="">4</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

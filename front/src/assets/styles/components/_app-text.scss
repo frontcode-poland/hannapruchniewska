@@ -1,3 +1,8 @@
 .app-text {
   position: relative;
+
+  &--article {
+    max-width: 800px;
+    margin: auto;
+  }
 }

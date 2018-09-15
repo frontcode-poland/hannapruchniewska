@@ -1,0 +1,52 @@
+$component: '.section-title';
+
+.section-title {
+  position: relative;
+  display: block;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  &__before-text {
+    position: relative;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    font-size: calculateRem(20px);
+    opacity: .75;
+    z-index: 1;
+  }
+
+  &__text {
+    position: relative;
+    display: block;
+    margin: 0;
+    font-size: calculateRem(42px);
+    font-weight: 400;
+    letter-spacing: .06em;
+    z-index: 1;
+  }
+
+  &--picture {
+    padding: 160px 60px;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(color('PRIMARY'), .25);
+    }
+
+    #{$component}__text {
+      font-weight: 700;
+      text-shadow: 0 0 20px color('PRIMARY');
+    }
+  }
+}

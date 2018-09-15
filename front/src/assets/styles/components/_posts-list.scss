@@ -1,0 +1,130 @@
+$component: '.posts-list';
+
+.posts-list {
+  position: relative;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -30px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    width: 33.3%;
+    padding: 30px;
+  }
+
+  &--large {
+    #{$component}__items {
+      margin: -15px;
+    }
+    #{$component}__item {
+      width: 50%;
+      padding: 15px;
+    }
+  }
+}
+
+$component: '.pl-item';
+.pl-item {
+
+  &__content {
+    position: relative;
+    padding-bottom: 60px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__date, &__title, &__text, &__action {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__date {
+    font-size: calculateRem(17px);
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: color('SECONDARY');
+  }
+
+  &__title {
+    display: block;
+    margin: 15px 0;
+    font-size: calculateRem(20px);
+    line-height: 1.4;
+  }
+
+  &__text {
+    font-size: calculateRem(16px);
+    font-weight: 300;
+    line-height: 1.8;
+    opacity: .75;
+  }
+
+  &__action {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    margin-top: 15px;
+    text-align: right;
+    font-weight: 700;
+  }
+
+  &--large {
+    #{$component}__content {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 40px;
+      padding-bottom: 80px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 30px 0 rgba(color('PRIMARY'), .15);
+      overflow: hidden;
+    }
+
+    #{$component}__text {
+      font-weight: 400;
+    }
+
+    #{$component}__action {
+      bottom: 35px;
+      right: 40px;
+    }
+  }
+
+  &--picture {
+    #{$component}__content {
+      position: relative;
+      color: #ffffff;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: rgba(color('PRIMARY'), .8);
+      }
+    }
+    #{$component}__date {
+      font-weight: 600;
+    }
+    #{$component}__title {
+      font-weight: 700;
+      letter-spacing: .025em;
+    }
+    #{$component}__text {
+      font-weight: 400;
+      letter-spacing: .025em;
+      opacity: 1;
+    }
+    #{$component}__link {
+      letter-spacing: .025em;
+    }
+  }
+}
