@@ -1,6 +1,6 @@
 {% import "_components/components.njk" as components %}
 {% set slug = 'home' %}
-{% set title = 'Starter - strona główna' %}
+{% set title = 'Hanna Pruchniewska - strona główna' %}
 {% extends "_layouts/default.njk" %}
 {% block content %}
 
@@ -13,13 +13,17 @@
                             <h1 class="slogan__text">
                                 <strong>Hanna </strong>
                                 <strong>Pruchniewska </strong>
+                                <small>Burmistrz Twojego miasta</small>
                             </h1>
                         </section>
                         <section class="separator">
                             <hr />
                         </section>
                         <section class="promo-video || app-component">
-                            <iframe width="100%" height="600" src="https://www.youtube.com/embed/Idr2geQqU_E?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/Idr2geQqU_E?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </section>
+                        <section class="separator">
+                            <hr />
                         </section>
                     </div>
                 </div>
@@ -32,50 +36,61 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="col-content">
-                        <section class="section-title section-title--light || app-component">
+                        <section class="section-title section-title--light || app-component text-center">
                             <h2 class="section-title__text">Aktualności</h2>
                         </section>
                         <section class="posts-list || app-component">
                             <ul class="posts-list__items">
                                 <li class="posts-list__item pl-item">
-                                    <p class="pl-item__date">1 września 2018</p>
-                                    <h3 class="pl-item__title">
-                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</a>
-                                    </h3>
-                                    <div class="pl-item__text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-                                    </div>
-                                    <div class="pl-item__action">
-                                        <a href="" class="pl-item__link">Czytaj całość</a>
-                                    </div>
-                                </li>
-
-                                <li class="posts-list__item pl-item">
-                                    <p class="pl-item__date">1 września 2018</p>
-                                    <h3 class="pl-item__title">
-                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</a>
-                                    </h3>
-                                    <div class="pl-item__text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-                                    </div>
-                                    <div class="pl-item__action">
-                                        <a href="" class="pl-item__link">Czytaj całość</a>
+                                    <div class="pl-item__content">
+                                        <p class="pl-item__date">1 września 2018</p>
+                                        <h3 class="pl-item__title">
+                                            <a href="./news-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</a>
+                                        </h3>
+                                        <div class="pl-item__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                        </div>
+                                        <div class="pl-item__action">
+                                            <a href="./news-single.html" class="pl-item__link">Czytaj całość</a>
+                                        </div>
                                     </div>
                                 </li>
 
                                 <li class="posts-list__item pl-item">
-                                    <p class="pl-item__date">1 września 2018</p>
-                                    <h3 class="pl-item__title">
-                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</a>
-                                    </h3>
-                                    <div class="pl-item__text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                    <div class="pl-item__content">
+                                        <p class="pl-item__date">1 września 2018</p>
+                                        <h3 class="pl-item__title">
+                                            <a href="./news-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</a>
+                                        </h3>
+                                        <div class="pl-item__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                        </div>
+                                        <div class="pl-item__action">
+                                            <a href="./news-single.html" class="pl-item__link">Czytaj całość</a>
+                                        </div>
                                     </div>
-                                    <div class="pl-item__action">
-                                        <a href="" class="pl-item__link">Czytaj całość</a>
+                                </li>
+
+                                <li class="posts-list__item pl-item">
+                                    <div class="pl-item__content">
+                                        <p class="pl-item__date">1 września 2018</p>
+                                        <h3 class="pl-item__title">
+                                            <a href="./news-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</a>
+                                        </h3>
+                                        <div class="pl-item__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                        </div>
+                                        <div class="pl-item__action">
+                                            <a href="./news-single.html" class="pl-item__link">Czytaj całość</a>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
+                        </section>
+                        <section class="buttons || app-component text-center">
+                            <a href="./news.html" class="button button--secondary button--rounded">
+                                Zobacz wszystkie
+                            </a>
                         </section>
                     </div>
                 </div>
@@ -88,7 +103,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="col-content">
-                        <section class="section-title || app-component">
+                        <section class="section-title || app-component text-center">
                             <h2 class="section-title__text">Ostatnio zadane pytania</h2>
                         </section>
                         <section class="last-qa">
@@ -127,6 +142,12 @@
                                     </div>
                                 </li>
                             </ul>
+                        </section>
+
+                        <section class="buttons || app-component text-center">
+                            <a href="./qa.html" class="button button--secondary button--outline button--rounded">
+                                Zobacz wszystkie
+                            </a>
                         </section>
                     </div>
                 </div>

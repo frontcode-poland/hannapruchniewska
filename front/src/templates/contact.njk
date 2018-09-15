@@ -1,0 +1,75 @@
+{% import "_components/components.njk" as components %}
+{% set slug = 'contact' %}
+{% set title = 'Hanna Pruchniewska - kontakt' %}
+{% extends "_layouts/default.njk" %}
+{% block content %}
+    <div class="app-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-content">
+                        <section class="section-title section-title--light || app-component text-center">
+                            <h2 class="section-title__text">Skontaktuj się ze mną</h2>
+                        </section>
+                        <section class="contact-form || app-component">
+                            <div class="contact-form__content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="contact-form__title">
+                                            <h4>Za pomocą formularza kontaktowego</h4>
+                                        </div>
+                                        <form action="">
+                                            <fieldset>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="message" class="form-label">Treść wiadomości</label>
+                                                            <textarea name="message" id="message" placeholder="Treść Twojej wiadomości"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset>
+                                                <div class="row bottom-xs">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="email" class="form-label">Adres email</label>
+                                                            <input type="email" name="email" id="email" placeholder="Twój adres email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="submit" value="Wyślij">
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form__title">
+                                            <h4>W sposób klasyczny</h4>
+                                        </div>
+
+                                        <div class="contact-items">
+                                            <div class="contact-item">
+                                                <p class="contact-item__ico"><i class="hp-icon hp-icon--email-linear"></i></p>
+                                                <p class="contact-item__value">kontakt@hannapruchniewska.pl</p>
+                                            </div>
+                                            <div class="contact-item">
+                                                <p class="contact-item__ico"><i class="hp-icon hp-icon--phone-linear"></i></p>
+                                                <p class="contact-item__value">kom.: +48 123-456-789</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form__picture">
+                                <img src="assets/images/contact1.jpg" alt="contact">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

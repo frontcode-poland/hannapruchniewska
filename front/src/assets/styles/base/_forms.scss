@@ -13,10 +13,11 @@ fieldset {
   }
 }
 
-input[type="text"], input[type="number"], input[type="submit"], select, textarea {
+input:not([type="checkbox"]):not([type="radio"]), select, textarea {
   display: block;
   width: 100%;
   padding: 15px;
+  font-size: calculateRem(14px);
   border: 1px rgba(color('PRIMARY'), .25) solid;
   border-radius: 6px;
   resize: none;
@@ -56,11 +57,44 @@ select::-ms-expand {
 }
 
 textarea {
-  min-height: 100px;
+  min-height: 75px;
 }
 
-.form-label {
+label, .form-label {
   display: block;
-  margin-bottom: 5px;
   font-style: italic;
+  font-weight: 400;
+  cursor: pointer;
+
+  > span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    cursor: pointer;
+    input {
+      cursor: pointer;
+    }
+  }
+
+  & + input, & + select, & + textarea {
+    margin-top: 5px;
+  }
+}
+
+.jcf-checkbox, .jcf-radio {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 2px currentColor solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.jcf-checkbox span {
+  height: 6px;
+  width: 10px;
+}
+
+.jcf-focus, .jcf-focus *, .jcf-checked, .jcf-checked * {
+  border-color: color('SECONDARY') !important;
 }

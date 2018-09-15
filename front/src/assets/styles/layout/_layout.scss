@@ -21,6 +21,30 @@
   background-position: center;
   background-size: cover;
 
+  & + & {
+    &::before {
+      content: "\e907";
+      font-family: 'HP-Icons', sans-serif;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 80px;
+      height: 80px;
+      font-size: calculateRem(24px);
+      font-weight: 900;
+      text-align: center;
+      line-height: 84px;
+      color: color('PRIMARY');
+      background: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 0 30px 0 rgba(color('PRIMARY'), .25);
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+
   &--bg-light {
     color: color('PRIMARY');
     background: #ffffff;

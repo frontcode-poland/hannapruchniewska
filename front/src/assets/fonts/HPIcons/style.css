@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'HP-Icons';
-  src:  url('fonts/HP-Icons.eot?m6ybof');
-  src:  url('fonts/HP-Icons.eot?m6ybof#iefix') format('embedded-opentype'),
-    url('fonts/HP-Icons.ttf?m6ybof') format('truetype'),
-    url('fonts/HP-Icons.woff?m6ybof') format('woff'),
-    url('fonts/HP-Icons.svg?m6ybof#HP-Icons') format('svg');
+  src:  url('fonts/HP-Icons.eot?nae8z7');
+  src:  url('fonts/HP-Icons.eot?nae8z7#iefix') format('embedded-opentype'),
+    url('fonts/HP-Icons.ttf?nae8z7') format('truetype'),
+    url('fonts/HP-Icons.woff?nae8z7') format('woff'),
+    url('fonts/HP-Icons.svg?nae8z7#HP-Icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hp-icon--angle-down:before {
+  content: "\e907";
+}
+.hp-icon--angle-right:before {
+  content: "\e906";
+}
+.hp-icon--next:before {
+  content: "\e905";
+}
+.hp-icon--email-linear:before {
+  content: "\e903";
+}
+.hp-icon--phone-linear:before {
+  content: "\e904";
+}
 .hp-icon--fb:before {
   content: "\e901";
 }

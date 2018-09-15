@@ -1,0 +1,37 @@
+.pagination {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  &__list {
+    display: block;
+    width: 100%;
+    list-style-type: none;
+    margin: -5px;
+    padding: 0;
+    text-align: center;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+
+    a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 38px;
+      border: 2px color('PRIMARY') solid;
+      border-radius: 50%;
+    }
+
+    &.active a {
+      color: #ffffff;
+      background: color('SECONDARY');
+      border-color: color('SECONDARY');
+    }
+  }
+}

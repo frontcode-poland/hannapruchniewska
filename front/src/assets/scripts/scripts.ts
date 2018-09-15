@@ -1,7 +1,8 @@
 import {Utils} from "./utils";
 import {Component} from './component';
+import {Example} from './components/example/example';
 
-import {Example} from "./components/example/example";
+import * as jcf from 'jcf';
 
 const availableComponents = {
     example: Example
@@ -65,7 +66,10 @@ export class App {
     }
 
     private initializeVendors (): void {
-
+        const elements = document.querySelectorAll('[jcf]');
+        elements.forEach((item, id) => {
+            jcf.replace(item)
+        });
     }
 }
 
