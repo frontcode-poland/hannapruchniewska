@@ -1,0 +1,28 @@
+.contact-form {
+  position: relative;
+  display: block;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 60px 0 rgba(24,41,104,0.2);
+  overflow: hidden;
+
+  &__content {
+    padding: 50px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__picture {
+    position: relative;
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.contact-items {
+  display: block;
+  width: 100%;
+  padding: 25px 30px;
+}
+
+.contact-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+
+  & + & {
+    margin-top: 30px;
+  }
+
+  &__ico {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    font-size: calculateRem(28px);
+    text-align: center;
+    line-height: 64px;
+    //color: #ffffff;
+    //background: color('PRIMARY');
+    border: 1px rgba(color('PRIMARY'), .25) solid;
+    border-radius: 50%;
+  }
+
+  &__value {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    font-weight: 600;
+    white-space: normal;
+  }
+}

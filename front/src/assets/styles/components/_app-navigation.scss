@@ -1,0 +1,47 @@
+.app-navigation {
+  position: relative;
+
+  &__list {
+    margin: 0 -10px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 35px 0;
+    font-size: calculateRem(14px);
+    letter-spacing: 0.025em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 4px;
+      width: 0;
+      background: currentColor;
+      transition: width 100ms linear;
+    }
+
+    &:hover, .active & {
+      color: color('SECONDARY');
+      &::after {
+        width: 100%;
+      }
+    }
+
+    .active & {
+      font-weight: 800;
+    }
+  }
+}

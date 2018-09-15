@@ -1,0 +1,98 @@
+{% import "_components/components.njk" as components %}
+{% set slug = 'news' %}
+{% set title = 'Hanna Pruchniewska - aktualności' %}
+{% extends "_layouts/default.njk" %}
+{% block content %}
+    <div class="app-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-content">
+                        <section class="section-title section-title--light || app-component text-center">
+                            <h2 class="section-title__text">Aktualności</h2>
+                        </section>
+
+                        <section class="posts-list posts-list--large || app-component">
+                            <ul class="posts-list__items">
+                                <li class="posts-list__item pl-item pl-item--picture pl-item--large">
+                                    <div class="pl-item__content" style="background-image: url('assets/images/news1.jpg')">
+                                        <p class="pl-item__date">1 września 2018</p>
+                                        <h3 class="pl-item__title">
+                                            <a href="./news-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</a>
+                                        </h3>
+                                        <div class="pl-item__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                        </div>
+                                        <div class="pl-item__action">
+                                            <a href="./news-single.html" class="pl-item__link">Czytaj całość</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="posts-list__item pl-item pl-item--picture pl-item--large">
+                                    <div class="pl-item__content" style="background-image: url('assets/images/news2.jpg')">
+                                        <p class="pl-item__date">1 września 2018</p>
+                                        <h3 class="pl-item__title">
+                                            <a href="./news-single.html">Lorem ipsum dolor sit amet.</a>
+                                        </h3>
+                                        <div class="pl-item__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                        <div class="pl-item__action">
+                                            <a href="./news-single.html" class="pl-item__link">Czytaj całość</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="posts-list__item pl-item pl-item--picture pl-item--large">
+                                    <div class="pl-item__content" style="background-image: url('assets/images/news2.jpg')">
+                                        <p class="pl-item__date">1 września 2018</p>
+                                        <h3 class="pl-item__title">
+                                            <a href="./news-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</a>
+                                        </h3>
+                                        <div class="pl-item__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                        </div>
+                                        <div class="pl-item__action">
+                                            <a href="./news-single.html" class="pl-item__link">Czytaj całość</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="posts-list__item pl-item pl-item--large">
+                                    <div class="pl-item__content">
+                                        <p class="pl-item__date">1 września 2018</p>
+                                        <h3 class="pl-item__title">
+                                            <a href="./news-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</a>
+                                        </h3>
+                                        <div class="pl-item__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                        </div>
+                                        <div class="pl-item__action">
+                                            <a href="./news-single.html" class="pl-item__link">Czytaj całość</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item active">
+                                    <a href="">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="">4</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
